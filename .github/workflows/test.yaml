@@ -12,5 +12,5 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
       - run: |
-            export test=testing 1 2 3 !
+            export test=testing123!
             echo $test
