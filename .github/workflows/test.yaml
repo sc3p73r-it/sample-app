@@ -1,5 +1,5 @@
 name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} is testing github action
 on: [push]
 jobs:
   check-bats-version:
@@ -11,3 +11,6 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - run: |
+            export test=testing123!
+            echo $test
